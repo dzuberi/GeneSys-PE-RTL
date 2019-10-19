@@ -1,0 +1,121 @@
+ 
+****************************************
+Report : area
+Design : EvE_PE
+Version: J-2014.09
+Date   : Tue Apr 30 17:35:01 2019
+****************************************
+
+Library(s) Used:
+
+    NanGate_15nm_OCL (File: /nethome/elyons8/Desktop/MLH/FinalProject/files/synth/lib/NanGate_15nm_OCL.db)
+
+Number of ports:                          427
+Number of nets:                           785
+Number of cells:                            7
+Number of combinational cells:              0
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                          0
+Number of references:                       7
+
+Combinational area:               6685.409309
+Buf/Inv area:                     1750.892570
+Noncombinational area:            8025.538282
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                 14710.947591
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area           Local cell area
+                                  -------------------  ---------------------------- 
+Hierarchical cell                 Absolute    Percent  Combi-     Noncombi-  Black-
+                                  Total       Total    national   national   boxes   Design
+--------------------------------  ----------  -------  ---------  ---------  ------  ---------------------------------------------------
+EvE_PE                            14710.9476    100.0     0.0000     0.0000  0.0000  EvE_PE
+Add_Gene_Engine                    4678.2381     31.8   135.8561   226.1975  0.0000  EvE_Add_Gene_Engine
+Add_Gene_Engine/add_comp             30.8183      0.2     0.5407     0.0000  0.0000  comparator_DATA_WIDTH32_0
+Add_Gene_Engine/add_comp/r56         30.2776      0.2    30.2776     0.0000  0.0000  comparator_DATA_WIDTH32_0_DW01_cmp6_0
+Add_Gene_Engine/maxNodeIDReg         18.9727      0.1     4.3254    10.2236  0.0000  counter_DATA_WIDTH8_COUNT_FROM0
+Add_Gene_Engine/maxNodeIDReg/add_45
+                                      4.4237      0.0     4.4237     0.0000  0.0000  counter_DATA_WIDTH8_COUNT_FROM0_DW01_inc_0
+Add_Gene_Engine/out_Fifo           4266.3935     29.0  2208.8909  2057.5026  0.0000  tri_ported_fifo
+Crossover_Engine                    325.7795      2.2    82.2804    86.9007  0.0000  EvE_Crossover_Engine
+Crossover_Engine/bits15to8            4.0796      0.0     4.0796     0.0000  0.0000  mux_2to1_8bit_5
+Crossover_Engine/bits23to16           4.0796      0.0     4.0796     0.0000  0.0000  mux_2to1_8bit_6
+Crossover_Engine/bits31to24           4.0796      0.0     4.0796     0.0000  0.0000  mux_2to1_8bit_7
+Crossover_Engine/bits7to0             4.0796      0.0     4.0796     0.0000  0.0000  mux_2to1_8bit_4
+Crossover_Engine/compID1              8.5033      0.1     8.5033     0.0000  0.0000  comparator_DATA_WIDTH8_18
+Crossover_Engine/compID2              8.5033      0.1     8.5033     0.0000  0.0000  comparator_DATA_WIDTH8_17
+Crossover_Engine/compRand1           30.8183      0.2     0.5407     0.0000  0.0000  comparator_DATA_WIDTH32_9
+Crossover_Engine/compRand1/r56       30.2776      0.2    30.2776     0.0000  0.0000  comparator_DATA_WIDTH32_9_DW01_cmp6_0
+Crossover_Engine/compRand2           30.8183      0.2     0.5407     0.0000  0.0000  comparator_DATA_WIDTH32_8
+Crossover_Engine/compRand2/r56       30.2776      0.2    30.2776     0.0000  0.0000  comparator_DATA_WIDTH32_8_DW01_cmp6_0
+Crossover_Engine/compRand3           30.8183      0.2     0.5407     0.0000  0.0000  comparator_DATA_WIDTH32_7
+Crossover_Engine/compRand3/r56       30.2776      0.2    30.2776     0.0000  0.0000  comparator_DATA_WIDTH32_7_DW01_cmp6_0
+Crossover_Engine/compRand4           30.8183      0.2     0.5407     0.0000  0.0000  comparator_DATA_WIDTH32_6
+Crossover_Engine/compRand4/r56       30.2776      0.2    30.2776     0.0000  0.0000  comparator_DATA_WIDTH32_6_DW01_cmp6_0
+Delete_Gene_Engine                  440.0579      3.0    37.0115    81.7889  0.0000  EvE_Delete_Gene_Engine
+Delete_Gene_Engine/delete_comp       30.8183      0.2     0.5407     0.0000  0.0000  comparator_DATA_WIDTH32_1
+Delete_Gene_Engine/delete_comp/r56
+                                     30.2776      0.2    30.2776     0.0000  0.0000  comparator_DATA_WIDTH32_1_DW01_cmp6_0
+Delete_Gene_Engine/delete_file      281.9359      1.9    48.3164    93.2905  0.0000  Deleted_Nodes_max_deletions8_DATA_WIDTH8
+Delete_Gene_Engine/delete_file/add_50
+                                      4.2762      0.0     4.2762     0.0000  0.0000  Deleted_Nodes_max_deletions8_DATA_WIDTH8_DW01_inc_0
+Delete_Gene_Engine/delete_file/gen1_0__add_comp1
+                                      8.5033      0.1     8.5033     0.0000  0.0000  comparator_DATA_WIDTH8_15
+Delete_Gene_Engine/delete_file/gen1_0__add_comp2
+                                      8.5033      0.1     8.5033     0.0000  0.0000  comparator_DATA_WIDTH8_14
+Delete_Gene_Engine/delete_file/gen1_1__add_comp1
+                                      8.5033      0.1     8.5033     0.0000  0.0000  comparator_DATA_WIDTH8_13
+Delete_Gene_Engine/delete_file/gen1_1__add_comp2
+                                      8.5033      0.1     8.5033     0.0000  0.0000  comparator_DATA_WIDTH8_12
+Delete_Gene_Engine/delete_file/gen1_2__add_comp1
+                                      8.5033      0.1     8.5033     0.0000  0.0000  comparator_DATA_WIDTH8_11
+Delete_Gene_Engine/delete_file/gen1_2__add_comp2
+                                      8.5033      0.1     8.5033     0.0000  0.0000  comparator_DATA_WIDTH8_10
+Delete_Gene_Engine/delete_file/gen1_3__add_comp1
+                                      8.5033      0.1     8.5033     0.0000  0.0000  comparator_DATA_WIDTH8_9
+Delete_Gene_Engine/delete_file/gen1_3__add_comp2
+                                      8.5033      0.1     8.5033     0.0000  0.0000  comparator_DATA_WIDTH8_8
+Delete_Gene_Engine/delete_file/gen1_4__add_comp1
+                                      8.5033      0.1     8.5033     0.0000  0.0000  comparator_DATA_WIDTH8_7
+Delete_Gene_Engine/delete_file/gen1_4__add_comp2
+                                      8.5033      0.1     8.5033     0.0000  0.0000  comparator_DATA_WIDTH8_6
+Delete_Gene_Engine/delete_file/gen1_5__add_comp1
+                                      8.5033      0.1     8.5033     0.0000  0.0000  comparator_DATA_WIDTH8_5
+Delete_Gene_Engine/delete_file/gen1_5__add_comp2
+                                      8.5033      0.1     8.5033     0.0000  0.0000  comparator_DATA_WIDTH8_4
+Delete_Gene_Engine/delete_file/gen1_6__add_comp1
+                                      8.5033      0.1     8.5033     0.0000  0.0000  comparator_DATA_WIDTH8_3
+Delete_Gene_Engine/delete_file/gen1_6__add_comp2
+                                      8.5033      0.1     8.5033     0.0000  0.0000  comparator_DATA_WIDTH8_2
+Delete_Gene_Engine/delete_file/gen1_7__add_comp1
+                                      8.5033      0.1     8.5033     0.0000  0.0000  comparator_DATA_WIDTH8_1
+Delete_Gene_Engine/delete_file/gen1_7__add_comp2
+                                      8.5033      0.1     8.5033     0.0000  0.0000  comparator_DATA_WIDTH8_0
+Delete_Gene_Engine/valid_comp         8.5033      0.1     8.5033     0.0000  0.0000  comparator_DATA_WIDTH8_16
+PRNG                                 80.1669      0.5    34.1606    46.0063  0.0000  EvE_PRNG
+Perturbation_Engine                 165.5439      1.1    25.9523     0.0000  0.0000  EvE_Perturbation_Engine
+Perturbation_Engine/bits15to8         4.0796      0.0     4.0796     0.0000  0.0000  mux_2to1_8bit_1
+Perturbation_Engine/bits23to16        4.0796      0.0     4.0796     0.0000  0.0000  mux_2to1_8bit_2
+Perturbation_Engine/bits31to24        4.0796      0.0     4.0796     0.0000  0.0000  mux_2to1_8bit_3
+Perturbation_Engine/bits7to0          4.0796      0.0     4.0796     0.0000  0.0000  mux_2to1_8bit_0
+Perturbation_Engine/compID1          30.8183      0.2     0.5407     0.0000  0.0000  comparator_DATA_WIDTH32_5
+Perturbation_Engine/compID1/r56      30.2776      0.2    30.2776     0.0000  0.0000  comparator_DATA_WIDTH32_5_DW01_cmp6_0
+Perturbation_Engine/compID2          30.8183      0.2     0.5407     0.0000  0.0000  comparator_DATA_WIDTH32_4
+Perturbation_Engine/compID2/r56      30.2776      0.2    30.2776     0.0000  0.0000  comparator_DATA_WIDTH32_4_DW01_cmp6_0
+Perturbation_Engine/compID3          30.8183      0.2     0.5407     0.0000  0.0000  comparator_DATA_WIDTH32_3
+Perturbation_Engine/compID3/r56      30.2776      0.2    30.2776     0.0000  0.0000  comparator_DATA_WIDTH32_3_DW01_cmp6_0
+Perturbation_Engine/compID4          30.8183      0.2     0.5407     0.0000  0.0000  comparator_DATA_WIDTH32_2
+Perturbation_Engine/compID4/r56      30.2776      0.2    30.2776     0.0000  0.0000  comparator_DATA_WIDTH32_2_DW01_cmp6_0
+p1_Fifo                            4510.5806     30.7  1798.7666  2711.8141  0.0000  syn_fifo_1
+p2_Fifo                            4510.5806     30.7  1798.7666  2711.8141  0.0000  syn_fifo_0
+--------------------------------  ----------  -------  ---------  ---------  ------  ---------------------------------------------------
+Total                                                  6685.4093  8025.5383  0.0000
+
+1
